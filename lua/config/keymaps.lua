@@ -35,12 +35,6 @@ keymap("n", "<leader>Q", ":qa!<CR>", { desc = "quit all" })
 -- window management
 -- ===========================================================
 
--- spilit windows
-keymap("n", "<leader>sv", ":vsplit<CR>", { desc = "split vertically" })
-keymap("n", "<leader>sh", ":split<CR>", { desc = "split horizontally" })
-keymap("n", "<leader>sc", "<C-w>c", { desc = "close current window" })
-keymap("n", "<leader>so", "<C-w>o", { desc = "close other windows" })
-
 -- travel through windows
 keymap("n", "<C-h>", "<C-w>h", { desc = "move to the window left" })
 keymap("n", "<C-j>", "<C-w>j", { desc = "move to the window below" })
@@ -52,15 +46,6 @@ keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Deown>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
-
--- ===========================================================
--- buffer management
--- ===========================================================
-
-keymap("n", "<Tab>", ":bnext<CR>", { desc = "next buffer" })
-keymap("n", "<S-Tab>", "bprev<CR>", { desc = "previous buffer" })
-keymap("n", "<leader>bd", ":bdelete<CR>", { desc = "delete buffer" })
-keymap("n", "<leader>ba", ":bufdo bd<CR>", { desc = "delete all buffers" })
 
 -- ===========================================================
 -- editing enhance
