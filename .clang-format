@@ -1,7 +1,9 @@
 # .clang-format
 
 IndentWidth: 4
-UseTab: Never
+TabWidth: 4
+UseTab: ForIndentation
+BasedOnStyle: Google
 ColumnLimit: 80
 AlignAfterOpenBracket: Align
 SpaceBeforeParens: Always
